@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo formulario 2</title>
+</head>
+<body>
+   <form action="http://paginadestina.aspx" method="get">
+
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <p>
+            <label for="Nome">Nome</label>
+            <input type="text" name="txtNome" id="txtNome">
+        </p>
+        <p>
+            <label for="data">Data de Nasc</label>
+            <input type="date" name="txtDatanasc" id="txtDataNasc">
+        </p>
+        <p>
+            <label for="data">Ano de Nasc</label>
+            <input type="number" name="txtAnonasc" id="txtAnoNasc" required min="1900" step="1">
+        </p>
+        <fieldset>
+            <legend>Sexo</legend>
+            <p>
+                <input type="radio" name="rdSexo" id="rdSexo01" value="Feminino">
+                <label for="sexo">Feminino</label>
+            </p>
+            <p>
+                <input type="radio" name="rdSexo" id="rdSexo02" value="Masculino">
+                <label for="sexo">Masculino</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Linguagens de Programação</legend>
+            <p>Selecione uma ou mais linguagens de Programação que voce conheça
+                <input type="checkbox" name="chgLinguagemProg" id="" value="1">C#
+                <input type="checkbox" name="chgLinguagemProg" id="" value="2">Java
+                <input type="checkbox" name="chgLinguagemProg" id="" value="3">Python
+                <input type="checkbox" name="chgLinguagemProg" id="" value="4">C++
+                <input type="checkbox" name="chgLinguagemProg" id="" value="5">Haskel
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Região do Brasil</legend>
+            <p>
+                Selecione uma Região
+                <input type="radio" name="rdRegiao" id="" value="SUL">Sul
+                <input type="radio" name="rdRegiao" id="" value="NORTE">Norte
+                <input type="radio" name="rdRegiao" id="" value="NORDESTE">Nordeste
+                <input type="radio" name="rdRegiao" id="" value="CENTRO_OESTE">Centro Oeste
+                <input type="radio" name="rdRegiao" id="" value="SUDESTE">Sudeste
+            </p>
+        </fieldset>
+        <p>
+            <label for="email">E-mail</label>
+            <input type="email" name="txtemail" id="txtemail">
+        </p>
+        <button type="submit">Enviar Dados</button>
+    </fieldset>
+</form>
+    
+</body>
+</html>

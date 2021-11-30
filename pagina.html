@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página</title>
+</head>
+<body>
+    <fieldset id="corpo">
+        <p>
+            <label for="Cor">Cor de Fundo: </label>
+            <input type="text" name='txtcor' id='txtcor' onblur="mudarcor()">
+        </p>
+        <p>
+            <label for="Img">Imagem: </label>
+            <input type="text" name="txtimg" id="txtimg" accept="image/*" onblur="imagem()">
+        </p>
+        <p>
+            <div><input type="reset" value="Limpar"></div>
+        </p>
+    </fieldset>
+            <h1 for="txtpag">Imagem da página</h1>
+            <div id="imagem"></div>
+        
+            
+        <script>
+            document.getElementById('corpo').mudarcor();
+            
+            function mudarcor(){
+                var txtcor = document.getElementById('txtcor').value;
+                document.getElementById('corpo').style.backgroundColor= txtcor;
+            }
+            document.getElementById('corpo').imagem();
+            
+            function imagem(){
+                var txtimg = document.getElementById('txtimg').value;
+                let img = document.createElement("img");
+                img.src=txtimg;
+                document.body.appendChild(img);
+            }
+        </script>
+</body>
+</html>

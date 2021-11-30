@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Exemplo alerta e icones</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Exemplo de utilizaçao de alertas e icones no bootstrap</h2>
+
+        <button type="submit" class="btn btn-outline-danger"></button>
+        <span class="fa fa-trash">
+            Excluir
+        </span>
+        <button type="submit" class="btn btn-outline-success"></button>
+        <i class="fa fa-address-book" aria-hidden="true">
+            Adicionar
+        </i>
+
+        <div class="alert alert-primary" role="alert">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, quisquam. Laborum dolore eaque
+                nesciunt nobis. Aut quibusdam deserunt eos, laboriosam culpa veritatis eum aspernatur optio eaque
+                aliquid corporis possimus dignissimos.</p>
+        </div>
+        <div class="alert alert-danger" role="alert">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita exercitationem quisquam ad atque nam
+                laboriosam quia consequuntur obcaecati quam. Magnam reprehenderit veritatis, incidunt unde odit facilis!
+                Facilis quisquam repudiandae repellat.</p>
+        </div>
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <button type="buttom" class="close" data-d="alert" aria-label="close"></button>
+            <p>Atençao!!!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, laudantium minima. Adipisci ab deserunt
+                nam, quis voluptatem dolorum delectus dolor voluptates odio tenetur, nemo eius, deleniti veniam sed
+                numquam maxime?</p>
+        </div>
+        <div class="alert alert-danger" role="alert">
+            <h4 class="alert-heading">Atencao</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla neque numquam dolorum sint molestiae
+                placeat eligendi, dolores similique doloremque dicta mollitia repudiandae culpa animi. Magni molestiae
+                cumque id vero illo.</p>
+            Content
+        </div>
+        <script>
+            $(".alert").alert();
+        </script>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>

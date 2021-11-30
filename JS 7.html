@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 7 javascript - variaveis</title>
+</head>
+
+<body>
+    <h1>Exemplo 7 javascript - variaveis</h1>
+    <h2>Programa para calcular a area de um triangulo</h2>
+    <script>
+        //declaramos variaveis internas do tipo inteiro
+        var a = 8;
+        var b = 2;
+        var h = 3;
+        var area = ((b * h) / 2);
+        document.writeln("A area do triangulo cuja a base e 2 e a altura e 3 e = " + area + "<br>");
+        document.writeln();
+        var str = "Programacao com javascript";
+
+        if (b < h) {
+            let d = a + b;// a variavel d somente podera ser acessada dentro do bloco if;
+            document.writeln("<br>");
+            document.writeln("O valor da variavel d e= " + d);
+        }
+        document.writeln("<br>");
+        document.writeln("O valor da variavel d fora do bloco e = " + d);
+    </script>
+</body>
+
+</html>

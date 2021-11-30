@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo js estrutura de decisao</title>
+</head>
+<body>
+    <script>
+        //saber a idade para votar
+        var idade = eval(prompt("Informe sua idade para saber se voce pode votar");)
+        if(idade<16)
+        {
+            document.write("<h2> voce nao pode votar</h2>")
+            document.write("<h2> sua idade e menor que 16 anos</h2>")
+        }
+        else if (idade>16 && idade<18 || idade>65)
+        {
+            document.write("<h2> voce pode votar</h2>")
+            document.write("<h2> seu voto e facutativo</h2>")
+        }
+        else
+        {
+            document.write("<h2> voce deve votar</h2>")
+            document.write("<h2> seu voto e obrigatorio</h2>")
+        }
+        document.writeln("<br>")
+        document.writeln("<br>")
+        document.writeln("<br>")
+        //vidas do jogador
+        var vidas = 1;
+        if(vidas>2)
+        {
+            document.write("jogador vivo");
+        }
+        else if (vidas == 2)
+        {
+            document.write("jogador esta ferido");
+        }
+        else if (vida == 1)
+        {
+            document.write("jogador esta muito ferido");
+        }
+        else
+        {
+            document.write("jogador esta morto");
+        }
+        document.writeln("<br>")
+        document.writeln("<br>")
+        document.writeln("<br>")
+        //idade com inscricao
+        var idade= eval(prompt("qual a sua idade"));
+        if (idade>=18)
+        {
+            document.write("<h2> Incriçao autorizada </h2>")
+        }
+        else
+        {
+            document.write("<h2> Incricao nao autorizada </h2>")
+        }
+        document.writeln("<br>")
+        document.writeln("<br>")
+        document.writeln("<br>")
+        //pontuacao de jogadores
+        var pontos = eval(prompt("informe a pontuacao do jogador!!!"));
+
+        if ((pontos<34) || (pontos>65))
+        {
+            document.write("O jogador venceu!!!");
+        }
+        else
+        {
+            document.write("O jogador perdeu!!!");
+        }
+    </script>
+    
+</body>
+</html>

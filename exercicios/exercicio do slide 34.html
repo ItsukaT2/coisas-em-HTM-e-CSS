@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="www.minhapag.com" method="get">
+    <br>
+    <div>
+    <fieldset>
+        <legend>Dados pessoais</legend>
+        <br>
+    <div>
+            <label for="Nome">Nome:</label>
+            <input type="text" name="txtnome" id="txtnome" required autofocus>
+    </div>
+    <br>
+    <div>
+            <label for="Endereco">Endereço:</label>
+            <input type="text" name="txtendereco" id="txtendereco" required placeholder="Rua tal, quadra tals, ou/e CEP">
+    </div>
+    <br>
+    <div>
+            <label for="Cidade">Cidade:</label>
+            <input type="text" name="txtcidade" id="txtcidade" required>
+        </div>
+        <br>
+        <div>
+            <label for="Estado: ">Estado: </label>
+            <form method="post" action="cadastrar-enquete.php">
+                <select name="time">
+                <option value="SP">São Paulo</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="BA">Bahia</option>
+                <option value="PR">Paraná</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="PE">Pernambuco</option>
+                <option value="CE">Ceará</option>
+                <option value="PA">Pará</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="MA">Maranhão</option>
+                <option value="GO">Goiás</option>
+                <option value="AM">Amazonas</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="PB">Paraíba</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="AL">Alagoas</option>
+                <option value="PI">Piauí</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="SE">Sergipe</option>
+                <option value="RO">Rondônia</option>
+                <option value="TO">Tocantins</option>
+                <option value="AC">Acre</option>
+                <option value="AP">Amapá</option>
+                <option value="RR">Roraima</option>
+                </select>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Dados profissionais</legend>
+        <br>
+        <div>
+            <label for="Nat_cargo">Natureza do Cargo</label>
+            <br>
+            <input type="radio" name="rdcargo1" id="" value="GERENCIA">Gerência
+            <input type="radio" name="rdcargo2" id="" value="FINANCEIRO">Financeiro
+            <input type="radio" name="rdcargo3" id="" value="RECEPCAO">Recepção
+            <input type="radio" name="rdcargo4" id="" value="ADMINISTRATVO">Administrativo
+            <input type="radio" name="rdcargo5" id="" value="JURIDICO">Jurídico
+        </div>
+        <br>
+        <div>
+            <label for="area_inter">Área de interesse</label>
+            <br>
+            <input type="checkbox" name="ckbarea1" id="" value="COMPUTACAO">Computação
+            <input type="checkbox" name="ckbarea2" id="" value="BIOLOGIA">Biologia
+            <input type="checkbox" name="ckbarea3" id="" value="MEIO_AMBIENTE">Meio Ambiente
+            <input type="checkbox" name="ckbarea4" id="" value="ENGENHARIA">Engenharia
+            <input type="checkbox" name="ckbarea5" id="" value="HISTORIA">História
+        </div>
+        <br>
+        <div>
+            <label for="minicurriculo">Mini-currículo:</label>
+            <br>
+            <textarea name="mincurri" id="" cols="75" rows="15" required></textarea>
+        </div>
+    </fieldset>
+    <br>
+    <button type="submit">Enviar</button>    <button type="reset">Limpar</button>
+    </form>
+</body>
+</html>

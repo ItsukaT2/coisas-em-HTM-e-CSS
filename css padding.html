@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exem css padding</title>
+    <style>
+        p {
+            margin: 25px;
+            padding: 20px 2px 10px;
+            border: 3px solid red;
+        }
+
+        div {
+            padding: 10px;
+        }
+
+        .classeexem {
+            padding: 10px;
+            margin: 25px;
+        }
+
+        .botoes {
+            padding: 10px;
+            margin: 10px;
+            width: 100%;
+        }
+
+        button {
+            width: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="pgDestino.aspx" method="get">
+        <h1>Exemplo css padding</h1>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ex quibusdam corrupti doloremque,
+                consequuntur reiciendis officiis quaerat aliquam laudantium fugit totam sunt quam aut repellendus
+                voluptates
+                amet illum, similique voluptatibus?</p>
+        </div>
+        <div class="classeexem">
+            <div>
+                <label for="nome">Nome</label>
+                <input type="text" name="txtNome" id="">
+
+                <label for="nome">CPF</label>
+                <input type="text" name="txtNome" id="">
+
+                <label for="nome">Data de Nascimento</label>
+                <input type="datetime" name="nascdate" id="">
+            </div>
+            <div>
+                <label for="nome">Nome da mãe</label>
+                <input type="text" name="txtNome" id="">
+
+                <label for="nome">Nome do pai</label>
+                <input type="text" name="txtNome" id="">
+            </div>
+            <div>
+                <button type="submit">Cadastrar</button>
+                <button type="submit">Excluir</button>
+                <button type="submit">Pesquisar</button>
+                <button type="submit">Sair</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

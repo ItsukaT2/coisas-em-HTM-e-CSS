@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome</title>
+</head>
+<body>
+<p id="texto"></p>
+
+    <script> 
+    var pessoa = new Object();
+    pessoa.nome = window.prompt("Informe seu nome");
+    pessoa.sobrenome = window.prompt("Informe seu Sobrenome");
+    var msg = pessoa.nome+' '+pessoa.sobrenome;
+    alert(msg);
+    document.write(msg);
+    document.getElementById("texto").innerHTML= msg;
+      </script> 
+</body>
+</html>

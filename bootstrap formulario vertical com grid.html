@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Emplos formularios verticais bootstrap</title>
+    <style>
+        .cor {
+            background-color: #1bb9e9;
+            color: white;
+            font-weight: bold;
+        }
+
+        .efeito_panel_2 {
+            box-shadow: 0 10px rgba(0, 0, 0, 0.19), 0 2px 2px rgba(0, 0, 0, 0.23);
+            margin-right: 2px;
+            margin-bottom: 2px;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="alert alert-primary" role="alert">
+            <h4 class="alert-heating">Exemplo de utilizaçao de formularios verticais</h4>
+            <p>Redimencione a janela do navegador para a responsibilidade do formulario</p>
+        </div>
+        <div class="card efeito_panel_2">
+            <div class="card-header text-primary cor">
+                Cadastro de cliente
+            </div>
+            <div class="card-body">
+                <form action="xpto" method="GET">
+                    <div class="form-group">
+                        <label for="my-input">Nome</label>
+                        <input id="txtNome" class="form-control" type="text" name="txtNome">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label for="my-input">CPF</label>
+                            <input id="txtcpf" class="form-control" type="text" name="txtcpf">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="my-input">RG</label>
+                            <input id="txtrg" class="form-control" type="text" name="txtrg">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="my-input">e-mail</label>
+                            <input id="txtEmail" class="form-control" type="text" name="txtEmail">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="my-input">Senha</label>
+                        <input id="txtSenha" class="form-control" type="password" name="txtSenha">
+                    </div>
+                    <div class="form-group">
+                        <label for="my-select">Estado civil</label>
+                        <select id="cboestadocivil" class="form-control" name="cboestadocivil">
+                            <option value="1">Casado</option>
+                            <option value="2">Solteiro</option>
+                            <option value="3">Divorciado</option>
+                            <option value="4">Tico-tico no fuba</option>
+                            <option value="5">outros</option>
+                        </select>
+                    </div>
+                    <div>
+                        <div class="col-md-3">
+                            <button type="submit" class="btn btn-outline-primary btn-block">Salvar</button>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="submit" class="btn btn-outline-primary btn-block">Excluir</button>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="submit" class="btn btn-outline-primary btn-block">Pesquisar</button>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="submit" class="btn btn-outline-primary btn-block">Sair</button>
+                        </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+</head>
+<body>
+   <form action="http://paginadestina.aspx" method="get">
+
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <p>
+            <label for="Nome">Nome</label>
+            <input type="text" name="txtNome" id="txtNome">
+        </p>
+        <p>
+            <label for="Endereço">Endereço</label>
+            <input type="text" name="txtEndereço" id="txtEndereço">
+        </p>
+        <p>
+            <label for="Cidade">Cidade</label>
+            <input type="text" name="txtCidade" id="txtCidade">
+        </p>
+        <p>
+            <label for="Estado">Estado</label>
+            <input type="text" name="txtEstado" id="txtEstado">
+        </p>
+    </fieldset>
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            <p>
+                <label for="Nat">Natureza do Cargo</label>
+            </p>
+            <p>
+                <input type="radio" name="rdGer" id="rdGer" value="1">
+                <label for="rdGer">Gerência</label>
+                <input type="radio" name="rdFin" id="rdFin" value="Finaceiro">
+                <label for="rdFin">Financeiro</label>
+                <input type="radio" name="rdRec" id="rdRec" value="Recepção">
+                <label for="rdRec">Recepção</label>
+                <input type="radio" name="rdAdm" id="rdAdm" value="Administrativo">
+                <label for="rdAdm">Administrativo</label>
+                <input type="radio" name="rdJur" id="rdJur" value="Jurídico">
+                <label for="rdJur">Jurídico</label>
+            </p>
+            <legend>Área de interesse</legend>
+            <p>
+                <input type="checkbox" name="checkComp" id="" value="Computação">Computação
+                <input type="checkbox" name="check" id="" value="Biologia">Biologia
+                <input type="checkbox" name="check" id="" value="Meio Ambiente">Meio Ambiente
+                <input type="checkbox" name="check" id="" value="Engenharia">Engenharia
+                <input type="checkbox" name="check" id="" value="História">História
+            </p>
+            <p>
+                <label for="Mini-Currículo">Mini-Currículo </label>
+            </p>
+                <textarea name="Mini-Currículo" id="" cols="100" rows="5"></textarea>
+        </fieldset>
+       <p>
+        <button type="submit">Enviar</button>
+        <button type="submit">Limpar</button>
+       </p>
+</form>
+    
+</body>
+</html>

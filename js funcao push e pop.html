@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo da estrutura de dados pilha</title>
+</head>
+<body>
+    <h1>Estrutura de dados PILHA</h1>
+    <p>ão estruturas de dados do tipo LIFO (last-in first-out), 
+        onde o último elemento a ser inserido, será o primeiro a ser retirado. 
+        Assim, uma pilha permite acesso a apenas um item de dados - o último inserido. 
+        Para processar o penúltimo item inserido, deve-se remover o último.</p>
+    <script>
+        var vetor=[];
+        vetor.push("MARIA ");
+        vetor.push("JOSE ");
+        vetor.push("JOAO ");
+        vetor.push("CARLOS ");
+        document.writeln(vetor);
+        document.writeln("<br>");
+        var ultimo = vetor.pop();
+        document.writeln(ultimo);
+        document.writeln("<br>");
+        document.writeln(vetor);
+
+        document.writeln("<br>");
+        document.writeln("<br>");
+        document.writeln("<br>");
+        //metodo sort
+        var vetor2= new Array(9,3,2,1,5,4,7);
+        document.writeln("Vetor 2 sem estar ordenado:");
+        document.writeln("<br>");
+        document.writeln(vetor2);
+        vetor2.sort();
+        document.writeln("Vetor 2 ordenado com sort:");
+        document.writeln("<br>");
+        document.writeln(vetor2);
+    </script>
+</body>
+</html>
